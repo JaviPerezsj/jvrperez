@@ -21,7 +21,7 @@ body{
 }
 .cabecera__lista{
     display: flex;
-    background-color: gainsboro;
+    animation: ease-in-out fondo2 3s;
     justify-content: space-around;
 }
 .cabecera__lista__item{
@@ -198,4 +198,8 @@ align-items: center;
 @keyframes fondo {
     from {background-color: black;}
     to {background-color: azure;}
+}
+@keyframes fondo2 {
+    from {background-color: blue;}
+    to {background-color: gainsboro;}
 }
