@@ -1,0 +1,201 @@
+/* Asi son los comentarios */
+/*Fuentes
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Varela Round', sans-serif;*/
+body{
+    background-image: url(./img/backgroundindex.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cabecera{
+    display: flex;
+}
+.cabecera__titulo{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 60px;
+}
+.cabecera__lista{
+    display: flex;
+    background-color: gainsboro;
+    justify-content: space-around;
+}
+.cabecera__lista__item{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px 60px;
+}
+.principal{
+    display: flex;
+    padding: 20px;
+}
+.imagenprincipal{
+    border: solid 5px grey;
+}
+.main__descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ease-in-out fondo 5s;
+    font-family: 'Varela Round', sans-serif;
+    padding: 30px;
+}
+.servicios{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 35px;
+    background-color: gainsboro;
+    margin: 30px auto;
+    width: fit-content;
+}
+.servdesc{
+    display: flex;
+    justify-content: center;
+    padding-left: 250px;
+}
+
+.servicios__titulos{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    text-decoration-line: underline;
+align-items: center;
+}
+.servicios__descripcion{
+    width: 30%;
+    border: solid 3px black;
+    font-family: 'Varela Round', sans-serif;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+.pie{
+    background-color: gainsboro;
+    margin: 15px auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*Proyectos*/
+.proyectos{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 30px;
+}
+.proyectos__titulos__descripcion{
+    font-family: 'Varela Round', sans-serif;
+}
+.proyectos__titulos{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.proyectos__descripcion{
+    font-family: 'Varela Round', sans-serif;
+}
+.proyectos__imagen{
+    border: solid 7px burlywood;
+    width: fit-content;
+    margin: 10px 100px;
+}
+/*ALQUILER*/
+.rentalmain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.rentaltext{
+    justify-content: center;
+    width: 65%;
+}
+/*GALERIA*/
+.titlegaleria{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+}
+.galeria_main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    justify-items: center;
+}  
+.imagengaleria {
+    width: 400px;
+    height: 350px;
+}  
+/*CONTACTO*/
+.formulario{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: auto;
+    margin: 50px auto;
+}
+.contacto{
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: underline;
+    border: dashed 4px black;
+    width: fit-content;
+}
+/*tablet*/
+@media only screen and (max-width: 768px) {
+
+.logojvr{
+    size-adjust: 30%;
+   /*index*/
+    }
+    .principal{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    /*galeria*/
+    .galeria_main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+    .imagengaleria {
+      width: 350px;
+      height: 300px;
+    }
+}
+  /*mobile*/
+  @media only screen and (max-width: 320px) {
+    /* estilos generales*/
+    .cabecera__lista{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+.logojvr{
+    size-adjust: 30%;
+}
+    /*index*/
+    .principal{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .formulario{
+        font-family: 'Roboto Condensed', sans-serif;
+        width: 100%;
+        justify-content: center;
+        margin: 50px auto;
+    }
+}
+.logojvr{ 
+  animation: ease-in-out moverse 2s
+}
+@keyframes moverse {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.imagengaleria:hover{
+    transform: scale(1.1);
+}
+@keyframes fondo {
+    from {background-color: black;}
+    to {background-color: azure;}
+}
